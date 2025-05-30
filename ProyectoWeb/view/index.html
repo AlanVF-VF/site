@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción de la página">
+    <meta name="author" content="Tu Nombre">
+    <title>Pizzeria El de Web</title>
+    <link rel="stylesheet" href="/Pizzas/css/styles.css">
+    <script src="/Pizzas/js/script.js"></script>
+</head>
+<body>
+    <header>
+    <div class="header-brand">
+        <img src="/Pizzas/img/logo.png" alt="Logo CSSlice" style="height:60px;">
+        <h1 style="text-shadow: 2px 2px 8px #ffd412; margin: 0;">CSSlice</h1>
+    </div>
+    <div class="header-lema" style="flex: 1; text-align: center;">
+        <span style="font-size: 1.2em; font-style: italic;">¡La pizza que le da estilo a tu vida!</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <section id="home">
+            <h2>Bienvenido a CSSlice</h2>
+            <p>Disfruta de las mejores pizzas del mundo, hechas con amor y los ingredientes más frescos.</p>
+        </section>
+
+        <section id="menu">
+            <h2>Menú</h2>
+            <ul>
+                <li>Pizza Margarita</li>
+                <p>Una deliciosa combinación de salsa de tomate, queso mozzarella y albahaca fresca.</p>
+                <li>Pizza Cuatro Quesos</li>
+                <p>Una explosión de sabor con mozzarella, cheddar, azul y parmesano.</p>
+                <li>Pizza Hawaiana</li>
+                <p>La clásica combinación de jamón, piña y queso, perfecta para los amantes de lo dulce y salado.</p>
+                <li>Pizza Suprema</li>
+                <p>Una mezcla de pepperoni, champiñones, pimientos y cebolla, ideal para los que aman la variedad
+                <li>Pizza Mexicana</li>
+                <p>Con carne molida, frijoles, jalapeños y queso, una explosión de sabores picantes.</p>
+                <li>Pizza BBQ Pollo</li>
+                <p>Pollo a la parrilla con salsa BBQ, cebolla morada y cilantro, una delicia para los amantes del pollo.</p>
+                <li>Pizza con Tocino</li>
+                <p>La combinación perfecta de tocino crujiente, queso y salsa de tomate.</p>
+                <li>Pizza Pepperoni</li>
+                <p>La clásica pizza con rodajas de pepperoni, queso y salsa de tomate.</p>
+                <li>Pizza Vegetariana</li>
+                <p>Una opción saludable con champiñones, pimientos, cebolla, aceitunas y espinacas.</p>
+                <li>Pizza BBQ</li>
+                <p>Pollo a la parrilla con salsa BBQ, cebolla morada y cilantro, una delicia para los amantes del pollo.</p>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Para pedidos y consultas, llámanos al 123-456-7890 o envíanos un correo
+                <a href="mailto:yonosoyyiztak@hotmail.com">aquí</a></p>
+            <h2>Ubicación</h2>
+            <p>Av. Té 950, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX</p>
+            <h2>Mapa</h2>
+            <iframe 
+            src="https://www.google.com/maps?q=UPIICSA&output=embed"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <h2>Horario</h2>
+            <p>De lunes a domingo, de 10:00 a 22:00 horas.</p>
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm" onsubmit="return handleSubmit(event)">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CSSlice. Todos los derechos reservados.</p>
+        <p>Desarrollado por Equipo LaUpiicsa A y A</p>
+    </footer>
+</body>
+</html>
